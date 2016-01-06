@@ -4,112 +4,79 @@
     <dspace-header>
         <title>Cristin Incoming Metadata Registry</title>
     </dspace-header>
-
-    <!-- schemas used -->
-
+    
     <dc-schema>
         <name>dc</name>
         <namespace>http://dublincore.org/documents/dcmi-terms/</namespace>
     </dc-schema>
 
-    <dc-schema>
-        <name>cristin</name>
-        <namespace>http://www.cristin.no</namespace>
-    </dc-schema>
-
-    <!-- dc metadata elements required -->
-
     <dc-type>
-        <schema>cristin</schema>
-        <element>unitcode</element>
-        <scope_note>Unit Code for primary author</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>cristin</schema>
-        <element>unitname</element>
-        <scope_note>Unit Name for primary author</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>cristin</schema>
-        <element>ispublished</element>
-        <scope_note>Is the item published (true/false)</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>cristin</schema>
-        <element>fulltext</element>
-        <!-- unqualified -->
-        <scope_note>full text type</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>cristin</schema>
-        <element>qualitycode</element>
-        <scope_note>quality code for the published item</scope_note>
+        <schema>dc</schema>
+        <element>creator</element>
+        <qualifier>author</qualifier>
+        <scope_note/>
     </dc-type>
 
     <dc-type>
         <schema>dc</schema>
         <element>identifier</element>
-        <qualifier>cristin</qualifier>
-        <scope_note>Cristn ID for an item</scope_note>
+        <qualifier>cristinID</qualifier>
+        <scope_note>CRIStins løpenummer for metadata - posten.</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>dc</schema>
         <element>identifier</element>
-        <qualifier>jtitle</qualifier>
-        <scope_note>Journal title</scope_note>
+        <qualifier>doi</qualifier>
+        <scope_note>Document Object Identifier.</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>dc</schema>
         <element>identifier</element>
-        <qualifier>volume</qualifier>
-        <scope_note>Journal volume</scope_note>
+        <qualifier>bibliographicCitation</qualifier>
+        <scope_note>Referanse til f.eks. tidsskrift som artikkel er i eller bok som kapittel inngår i.</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>dc</schema>
-        <element>identifier</element>
-        <qualifier>issue</qualifier>
-        <scope_note>Journal issue number</scope_note>
+        <element>relation</element>
+        <qualifier>projectID</qualifier>
+        <scope_note>[kilde]: prosjekt - ID.</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>dc</schema>
-        <element>identifier</element>
-        <qualifier>startpage</qualifier>
-        <scope_note>Start page in journal</scope_note>
+        <element>source</element>
+        <qualifier>isbn</qualifier>
+        <scope_note>ISBN for bok som kapittel er i.</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>dc</schema>
-        <element>identifier</element>
-        <qualifier>endpage</qualifier>
-        <scope_note>End page in journal</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>dc</schema>
-        <element>identifier</element>
-        <qualifier>pagecount</qualifier>
-        <scope_note>page count</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>dc</schema>
-        <element>identifier</element>
-        <qualifier>urn</qualifier>
-        <scope_note>National URN</scope_note>
+        <element>source</element>
+        <qualifier>issn</qualifier>
+        <scope_note>ISSN for tidsskrift.</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>dc</schema>
         <element>subject</element>
-        <qualifier>nvi</qualifier>
+        <qualifier>keyword</qualifier>
+        <scope_note>Fritt emneord.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>subject</element>
+        <qualifier>nsi</qualifier>
         <scope_note>Norwegian science index</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>type</element>
+        <qualifier>document</qualifier>
+        <scope_note>CRIStin - postens kategori.</scope_note>
     </dc-type>
 </dspace-dc-types>
