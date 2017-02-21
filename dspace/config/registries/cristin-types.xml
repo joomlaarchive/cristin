@@ -4,18 +4,11 @@
     <dspace-header>
         <title>Cristin Incoming Metadata Registry</title>
     </dspace-header>
-    
+
     <dc-schema>
         <name>dc</name>
         <namespace>http://dublincore.org/documents/dcmi-terms/</namespace>
     </dc-schema>
-
-    <dc-type>
-        <schema>dc</schema>
-        <element>creator</element>
-        <qualifier>author</qualifier>
-        <scope_note/>
-    </dc-type>
 
     <dc-type>
         <schema>dc</schema>
@@ -26,16 +19,9 @@
 
     <dc-type>
         <schema>dc</schema>
-        <element>identifier</element>
-        <qualifier>doi</qualifier>
-        <scope_note>Document Object Identifier.</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>dc</schema>
-        <element>identifier</element>
-        <qualifier>bibliographicCitation</qualifier>
-        <scope_note>Referanse til f.eks. tidsskrift som artikkel er i eller bok som kapittel inngår i.</scope_note>
+        <element>relation</element>
+        <qualifier>journal</qualifier>
+        <scope_note>Journal name</scope_note>
     </dc-type>
 
     <dc-type>
@@ -64,6 +50,13 @@
         <element>subject</element>
         <qualifier>keyword</qualifier>
         <scope_note>Fritt emneord.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>subject</element>
+        <qualifier>hrcs</qualifier>
+        <scope_note>Health Research Classification System (controlled index term). Format: &lt;Norwegian term&gt;&lt;space&gt;/&lt;English term&gt;</scope_note>
     </dc-type>
 
     <dc-type>
